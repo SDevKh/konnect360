@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-instrument);
+  --font-devanagari: var(--font-tiro);
+}
+
+:root {
+  --background: #FFFBF5;
+  --foreground: #1A0A00;
+  --accent: #E8500A;
+  --accent-hover: #C94008;
+  --accent-gold: #C8860A;
+  --accent-saffron: #FF9933;
+  --muted: #6B5B4E;
+  --border: #E2D5C3;
+  --card: #FFFFFF;
+}
+
+* { scrollbar-width: thin; scrollbar-color: #D6CCC2 transparent; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.font-serif { font-family: var(--font-instrument), Georgia, serif; }
+.font-devanagari { font-family: var(--font-tiro), serif; }
+
+/* Indian motif border pattern */
+.border-rangoli {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 6px,
+    #E8500A 6px,
+    #E8500A 7px
+  ), repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 14px,
+    #C8860A 14px,
+    #C8860A 15px
+  );
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 6px;
+}
+
+/* Saffron gradient band */
+.bg-saffron-band {
+  background: linear-gradient(135deg, #FFF3E0 0%, #FFFBF5 50%, #FFF8F0 100%);
+}
+
+/* Warm card */
+.bg-warm { background: #FBF6EE; }
+.bg-charcoal { background: #1A0A00; }
+.text-accent { color: var(--accent); }
+.bg-accent { background: var(--accent); }
+.text-balance { text-wrap: balance; }
+.border-soft { border-color: var(--border); }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #D6CCC2; border-radius: 999px; }
+
+/* focus */
+*:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* animations */
+@keyframes fadeIn { from { opacity:0; transform:translateY(8px)} to {opacity:1; transform:translateY(0)} }
+.animate-fade { animation: fadeIn 0.6s ease-out forwards; }
