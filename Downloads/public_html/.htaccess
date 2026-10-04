@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Redirect old URLs to new clean URLs
+Redirect 301 /product.html /Floral-Collection
+Redirect 301 /product2.html /Citrus-Collection
+Redirect 301 /product3.html /Woody-collections
+
+# Clean URLs for product pages
+RewriteRule ^Floral-Collection/?$ product.html [L]
+RewriteRule ^Citrus-Collection/?$ product2.html [L]
+RewriteRule ^Woody-collections/?$ product3.html [L]
+
+# Clean URLs for about and contact pages
+RewriteRule ^about/?$ about.html [L]
+RewriteRule ^contact/?$ contact.html [L]
+
+<IfModule mod_mime.c>
+  AddType model/gltf-binary .glb
+</IfModule>

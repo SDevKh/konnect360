@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pure Fragnance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favico.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="pics/logo.png" alt="Luxury Perfume Boutique Logo" loading="lazy">
+          </div>
+          <h1 class="slogan">Fragnance that defines you</h1>
+          <!-- Hamburger Icon -->
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+      
+          <ul id="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="product.html" class="nav-link">Collections</a></li>
+            <li><a href="product2.html" class="nav-link">Best Sellers</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="loop-txt">
+        <div class="looping-text-top">Grab The best deals, order now by just clicking on whatsapp icon</div>
+        </div>
+        <div class="hero-content">
+            <div style="height: auto;" class="slides">
+                <img src="pics/page_2_img_1.webp" alt="Slide 1" loading="lazy">
+            </div>
+        </div>
+      </section>
+      <section id="store-video" class="store-video-section">
+        <h2 style="color: lemonchiffon;">Our Store</h2>
+        <div class="video-container">
+            <!-- Added poster attribute for better loading experience -->
+            <video id="heroVideo" playsinline preload="metadata" poster="" autoplay muted loop playsinline width="100%">
+                <source src="https://pub-560ce33f9882466c82d70230201fdbc0.r2.dev/WhatsApp Video 2025-07-20 at 12.57.49_fd5c0d19.mp4" type="video/mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+              
+            <!-- Mute/Unmute Button -->
+            <button id="muteToggle" style="
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background: rgba(0,0,0,0.5);
+                color: white;
+                border: none;
+                padding: 8px 12px;
+                cursor: pointer;
+                border-radius: 5px;
+            ">🔇</button>
+        </div>
+    </section>
+    
+
+    <!-- Featured Collections Section -->
+    <section id="featured-collections" class="featured-collections">
+        <h2>Featured Collections</h2>
+        <div class="collections-grid">
+            <article class="collection-card">
+                <img src="pics/page_2.PNG" alt="Floral Collection" loading="lazy" />
+                <h3>Floral Collection</h3>
+                <p>Experience the essence of blooming flowers with our exclusive floral perfumes.</p>
+                <a href="product.html" class="cta-button">Explore</a>
+            </article>
+            <article class="collection-card">
+                <img src="pics/page_10.jpg" alt="Citrus Collection" loading="lazy" />
+                <h3>Citrus Collection</h3>
+                <p>Fresh and invigorating scents inspired by citrus fruits.</p>
+                <a href="product2.html" class="cta-button">Explore</a>
+            </article>
+            <article class="collection-card">
+                <img src="pics/page_15.jpg" alt="Woody Collection" loading="lazy" />
+                <h3>Woody Collection</h3>
+                <p>Warm and earthy fragnances with rich woody notes.</p>
+                <a href="product3.html" class="cta-button">Explore</a>
+            </article>
+        </div>
+    </section>
+
+   <section id="new-lauch">
+  <h2 style="color: #bd9b67; text-align: center; font-family: Cinzel; padding: 1vh;">New Launch Combos</h2>
+
+  <div class="carousel-container">
+    <button id="prevBtn" class="nav-btn">‹</button>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="card">
+          <img src="pics/newlauch1.jpg" alt="Perfume 1">
+          <h3>Modern Men's Perfume</h3>
+          <p>Indulge in a luxurious scent experience — this latest launch combines long-lasting notes with premium ingredients to elevate your daily aura.</p>
+          <a href="product.html" class="cta-button">Shop Now</a>
+        </div>
+        <div class="card">
+          <img src="pics/newlauch2.jpg" alt="Perfume 2">
+          <h3>Elegant Women's Perfume Set</h3>
+          <p>This luxurious set takes you on a sensory journey: the warm, sunlit allure of Desert Oudh; the pure, refined sophistication of Pure Oudh; the breezy, uplifting charm of Summer Oudh; and the deep, commanding elegance of King Oudh.</p>
+          <a href="product2.html" class="cta-button">Shop Now</a>
+        </div>
+        <div class="card">
+          <img src="pics/newlaucnh3.jpg" alt="Perfume 3">
+          <h3>The Oudh Quartett</h3>
+          <p>The Oudh Quartet Elevate your senses with this luxurious collection of four artisanal fragrances designed exclusively for the modern woman</p>
+          <a href="product2.html" class="cta-button">Shop Now</a>
+        </div>
+        <div class="card">
+          <img src="pics/newlaunch4.jpg" alt="Perfume 4">
+          <h3>Mystique Oud Collection</h3>
+          <p>4 unique scents crafted for the modern.</p>
+          <a href="product2.html" class="cta-button">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <button id="nextBtn" class="nav-btn">›</button>
+  </div>
+</section>
+
+
+    <h1 style="color: #bd9b67; text-align: center; margin-top: 3vh; font-family: Cinzel;">Inside the World of Bespoke fragnance</h1>
+    <section class="workshop-slider">
+
+
+        <div class="slider">
+          <div class="slides2">
+            <div class="slide active">
+                <img src="pics/page_1_img_1_11zon-min.jpeg" alt="Perfume Making Workshop" loading="lazy">
+              <div class="overlay">
+                <div class="txt">
+                <h2>REPLICA</h2>
+                <p>Turn your favorite moments into unforgettable scents.</p>    
+            </div>
+              </div>
+            </div>
+            <div class="slide">
+                <img src="pics/page_4_img_1.png" alt="Hands-on Experience" loading="lazy">
+              <div class="overlay">
+                <div class="txt">
+                    <h2>Customized Perfumes</h2>
+                    <p>Transform your favorite flavors into signature scents crafted just for you.</p>                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn prev">&#10094;</button>
+          <button class="slider-btn next">&#10095;</button>
+        </div>
+      </section>
+      
+
+        <section class="image-text">
+            <div class="img--container">
+                <!-- Looping background text -->
+                <div class="looping-text">PURE Fragnance • LUXURY • PURE Fragnance • LUXURY •</div>
+                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+                <div class="image-container">
+                    <model-viewer   data-scroll data-scroll-speed="2"
+                    src="pics/fancy_perfume_bottle.glb"
+                    alt="3D model of a perfume bottle"
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    disable-zoom
+                    disable-pan
+                    disable-tap
+                    camera-controls="false"
+                    touch-action="none"
+                    style="width: 100vw; height: 75vh; pointer-events: none;">
+                    </model-viewer>
+                </div>
+              </div>
+        </section>
+        <a href="https://wa.me/918850631474" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+          </a>
+          
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Pure fragnance</h2>
+            <p>At Pure fragnance, we believe that scent is not just a detail—it's an identity. We bring you an exclusive collection of the world's finest fragnances, each crafted with exquisite care and the highest quality ingredients. Every bottle is a story, every note a memory, designed to awaken your senses and elevate your presence.</p>
+            <h2 style="font-size: 2rem;">Our Philosophy</h2>
+                <p>fragnance that defines you—effortlessly, intimately, eternally.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Premium Ingredients</h3>
+                    <p>We use only the finest natural ingredients sourced from sustainable partners worldwide.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🧪</div>
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Our perfumes are created by master perfumers with decades of experience.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">♻️</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>All our packaging is recyclable and designed with environmental consciousness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram reels Section -->
+    <section id="featured-collections" class="featured-collections">
+        <div class="container">
+          <h2 style="background-color: #faf5c6; font-family: Cinzel;">Our Social Media</h2>
+          <div class="looping-text3 typewriter">Join Our Instagram Family Over 5K</div>
+          <div class="instagram-reel-container" style="position: relative; overflow: hidden;">
+            <button class="scroll-btn prev-btn instagram-prev-btn" aria-label="Scroll Left">&#10094;</button>
+      
+            <div class="instagram-reel" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth;">
+              <!-- Embed Instagram Reels -->
+            <div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIrGJm2hSQk/?igsh=Zndxd3NwdW1hd2Q=" data-instgrm-version="14"></blockquote>
+            </div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEAGDyhoNNL/?igsh=MXJ3amlpdTFmcnI2YQ==" data-instgrm-version="14"></blockquote>
+            <div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DD87FUQvTCD/?igsh=MTV0c3VqMTJja2c0cw==" data-instgrm-version="14"></blockquote>
+            </div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DDzwBAlIZDG/?igsh=MWcxcmZ5OG4yeWI1YQ==" data-instgrm-version="14"></blockquote>
+            <div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4xGEtnI58t/?igsh=MXN5aThhdm15NHFrOQ==" data-instgrm-version="14"></blockquote>
+            </div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHjAR1sh50g/?igsh=anR0end1a2Nma3Bt" data-instgrm-version="14"></blockquote>
+            <div>
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C2j-zchIMXa/?igsh=MTdlM2lrMXBtbTJhag==" data-instgrm-version="14"></blockquote>
+            </div>
+        </div>
+      
+            <button class="scroll-btn next-btn instagram-next-btn" aria-label="Scroll Right">&#10095;</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Instagram Embed Script (placed outside loop to load once) -->
+      <script async defer src="https://www.instagram.com/embed.js"></script>
+      
+      <!-- Optional: Force reload on DOM ready (especially if inside tabs/carousels) -->
+      <script>
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  }, 500); // wait for half a second to ensure everything is rendered
+});
+
+      </script>
+      
+
+    <section id="customer-reviews" class="customer-reviews-section">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container">
+          <button class="scroll-btn prev-btn">&#10094;</button>
+          <div class="reviews-wrapper">
+            <div class="review-card">
+                    <p class="review-text">"Pure fragnanceis a symphony of scents that evoke emotions and transport us to a world of serenity......."</p>
+                    <p class="review-author">- Nilesh Chandrakant Apraj</p>
+                    <a href="https://g.co/kgs/kLQbwsR" target="_blank" rel="noopener" class="read-more-btn">Read More</a>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"You have a very good perfume collection, I have tested it, it stays on clothes for a long time very good job javed bhai Thanks ❤️👍😊"</p>
+                    <p class="review-author">- Naeem N Khan</p>
+                    <a href="https://g.co/kgs/hjwgk6S" target="_blank" rel="noopener" class="read-more-btn">Read More</a>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Ossum perfume it's really good and long lasting more than that javed bhai is also best man"</p>
+                    <p class="review-author">- Vivek Vipte</p>
+                    <a href="https://g.co/kgs/UkxJhBp" target="_blank" rel="noopener" class="read-more-btn">Read More</a>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Nice fragnancegood perfume affordable prices"</p>
+                    <p class="review-author">- Tejas Kamble</p>
+                    <a href="https://g.co/kgs/CwW1Q3D" target="_blank" rel="noopener"  class="read-more-btn">Read More</a>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Was a super taste of perfumes , awesome Collection"</p>
+                    <p class="review-author">- Kishan Depala</p>
+                    <a href="https://g.co/kgs/2EYSNqP" target="_blank" rel="noopener"  class="read-more-btn">Read More</a>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Lovely perfume with the long lasting fragnance"</p>
+                    <p class="review-author">- kiran kandalgaonkar</p>
+                    <a href="https://g.co/kgs/yTe6Aab" target="_blank" rel="noopener"  class="read-more-btn">Read More</a>
+                </div>
+            </div>
+            <button class="scroll-btn next-btn">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="founder-section">
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container bottomContainer">
+              <div class="ultimateImg">
+                <img class="mainImg" src="pics/founder.jpg" alt="Main image representing the founder section" loading="lazy">
+              </div>
+              <div class="allText bottomText">
+                <p class="text-blk headingText">
+                    Meet Our Founder - Javed Shaikh
+                </p>
+                <p class="text-blk subHeadingText">
+                    A Passion for Perfumes
+                </p>
+                <p class="text-blk description">
+                    Javed Shaikh, the visionary behind Pure fragnance, has always had a deep passion for the art of perfumery. With years of experience in the fragnanceindustry, he has dedicated his life to crafting unique and captivating scents that connect with people on a personal and emotional level. His unwavering commitment to quality and innovation has established Pure fragnances a leading name in the world of luxury perfumes.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+    <section id="location" class="location-section">
+    <div class="location-container">
+        <h2>Our Location</h2>
+        <h2>Store 1</h2>
+        <p>Visit us at our shop for better experience of our luxury perfumes</p>
+        <div class="location-details">
+            <div class="address">
+                <h3>Address</h3>
+                
+                <p>Shop no 6, Lalit niwas, s.v road, IB Patel Rd, opp. filmistan studio, near Vijay sales, <br>Goregaon West, Mumbai, Maharashtra 400104</p>
+                <p>Phone: +91 8850631474</p>
+            </div>
+            <div class="map">                
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7537.40368451407!2d72.8445347!3d19.1645243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7006d1eb46d%3A0x424480b13def175c!2sPure%20fragnance!5e0!3m2!1sen!2sin!4v1745836242415!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border:0; display:block;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Location of Pure Fragrance Boutique"
+                class="map-iframe">
+              </iframe>
+            </div>
+        </div>
+
+        <div class="shop-img">
+<img class="shop-img" src="pics/shop1.webp" alt="Store 2" class="store-image" loading="lazy">
+<img class="shop-img" src="pics/shop2.webp" alt="Store 2" class="store-image" loading="lazy">
+<img class="shop-img" src="pics/shop3.webp" alt="Store 2" class="store-image" loading="lazy">
+    </div>
+</section>
+
+<section id="location" class="location-section">
+    <div class="location-container">
+        <h2>Store 2</h2>
+        <div class="location-details">
+            <div class="address">
+                <h3>Address</h3>
+                
+                <p>Shop 281, AshokRaj bldg, opp City center, next to BMC office, s.v road  <br>Goregaon west, mumbai 400104</p>
+                <p>Phone: +91 8850631474</p>
+            </div>
+            <div class="map">                
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3768.7061060484225!2d72.84463707520763!3d19.16433778205853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDA5JzUxLjYiTiA3MsKwNTAnNTAuMCJF!5e0!3m2!1sen!2sin!4v1746157847204!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border:0; display:block;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Location of Pure Fragrance Boutique"
+                class="map-iframe">
+              </iframe>
+            </div>
+        </div>
+        </div>
+</section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Luxury Perfume Boutique</h3>
+                <p>Your destination for premium fragnances.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📌</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                    <li><a href="returns.html">Returns & Refunds</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive updates and special offers.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Luxury Perfume Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
